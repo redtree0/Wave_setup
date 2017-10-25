@@ -1,2 +1,2 @@
 sudo service docker stop
-sudo dockerd --tlsverify --tlscacert=ca.pem --tlscert=server-cert.pem --tlskey=server-key.pem -H=0.0.0.0:2376
+sudo dockerd -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2376
